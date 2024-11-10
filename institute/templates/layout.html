@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+
+<a href="{% url 'index' %}">Home</a>
+  <a href="{% url 'about' %}">about</a>
+<a href="{% url 'contact' %}">contact</a>
+<a href="{% url 'course_details' %}">Course_details</a>
+<a href="{% url 'courses' %}">Course</a>
+<a href="{% url 'events' %}">Events</a>
+<a href="{% url 'pricing' %}">Pricing</a>
+<a href="{% url 'stater_page' %}">stater_page</a>
+
+    {% block body %} {% endblock %}
+ 
+
+</body>
+</html>
