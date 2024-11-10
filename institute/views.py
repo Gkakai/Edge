@@ -11,7 +11,6 @@ def contact(request):
     return render(request, 'contact.html')
 def course_details(request):
     return render(request, 'course_details.html')
-
 def courses(request):
     return render(request, 'courses.html')
 def events(request):
