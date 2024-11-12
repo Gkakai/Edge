@@ -23,13 +23,13 @@ from institute import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-    path('/about/', views.about, name='about'),
-    path('/course_details/', views.course_details, name='course_details'),
-    path('/courses/', views.courses, name='courses'),
-    path('/events/', views.events, name='events'),
-    path('/pricing/', views.pricing, name='pricing'),
-    path('/contact/', views.contact, name='contact'),
-    path('/starter_page/', views.starter_page, name='starter_page')
+    path('about/', views.about, name='about'),
+    path('course_details/', views.course_details, name='course_details'),
+    path('courses/', views.courses, name='courses'),
+    path('events/', views.events, name='events'),
+    path('pricing/', views.pricing, name='pricing'),
+    path('contact/', views.contact, name='contact'),
+    path('starter_page/', views.starter_page, name='starter_page')
 
 ]
 

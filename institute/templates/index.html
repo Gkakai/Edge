@@ -11,12 +11,12 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Mentor</h1>
+        <h1 class="sitename">Edge</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home<br></a></li>
+          <li><a href="/" class="active">Home<br></a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="courses.html">Courses</a></li>
           <li><a href="trainers.html">Trainers</a></li>
@@ -44,7 +44,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="courses.html">Get Started</a>
+      <a class="btn-getstarted" href="courses.html">Start</a>
 
     </div>
   </header>
@@ -54,11 +54,11 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <img src="{% static 'img/hero-bg.jpg' %}" alt="" data-aos="fade-in">
 
       <div class="container">
         <h2 data-aos="fade-up" data-aos-delay="100">Learning Today,<br>Leading Tomorrow</h2>
-        <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites with Bootstrap</p>
+        <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites.</p>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
           <a href="courses.html" class="btn-get-started">Get Started</a>
         </div>
@@ -74,7 +74,7 @@
         <div class="row gy-4">
 
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="{% static 'img/about.jpg' %}" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
@@ -397,7 +397,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <img src="assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
+              <img src="{% static 'img/trainers/trainer-1.jpg' %}" class="img-fluid" alt="">
               <div class="member-content">
                 <h4>Walter White</h4>
                 <span>Web Development</span>
@@ -416,7 +416,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
-              <img src="assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">
+              <img src="{% static 'img/trainers/trainer-2.jpg' %}" class="img-fluid" alt="">
               <div class="member-content">
                 <h4>Sarah Jhinson</h4>
                 <span>Marketing</span>
@@ -435,7 +435,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
-              <img src="assets/img/trainers/trainer-3.jpg" class="img-fluid" alt="">
+              <img src="{% static 'img/trainers/trainer-3.jpg' %}" class="img-fluid" alt="">
               <div class="member-content">
                 <h4>William Anderson</h4>
                 <span>Content</span>
@@ -538,15 +538,15 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{% static 'js/main.js' %}"></script>
 
 </body>
     {% endblock %}
